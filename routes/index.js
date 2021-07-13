@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var spawn = require('child_process').spawn;
+var fs = require('fs').spawn;
 
 /* GET home page. */
 router.post('/restream', function(req, res, next) {
