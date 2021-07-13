@@ -11,7 +11,7 @@ try {
     spawn('ffmpeg', ['-re', '-i', 'rtmp://wowza02.onevent.online/live/stream' + req.body.roomid, "-c", "copy", "-f", "flv", req.body.rtmpURL],
         {
             detached: true,
-            stdio: ['ignore', out, err]
+           // stdio: ['ignore', out, err]
         }).unref();
     ;
 }
